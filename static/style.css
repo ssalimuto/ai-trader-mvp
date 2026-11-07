@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1020;
+  color: #e5ecff;
+  margin: 0;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.panel {
+  background: #121a2d;
+  border: 1px solid #2b3b5a;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+textarea, input, select, button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 8px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #36506f;
+  background: #0d172a;
+  color: white;
+}
+
+button {
+  background: #1f7aeb;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.status {
+  margin-top: 10px;
+  min-height: 20px;
+  font-size: 14px;
+}
+
+.trade-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px;
+  border-bottom: 1px solid #2a3550;
+}

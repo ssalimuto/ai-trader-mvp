@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ssalimuto bot</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>ssalimuto bot</h1>
+      <nav>
+        <button id="loginBtn">Login</button>
+        <button id="signupBtn">Sign Up</button>
+      </nav>
+    </header>
+
+    <div id="authStatus" class="status"></div>
+
+    <section class="panel">
+      <h2>Market Research</h2>
+      <textarea id="question" rows="4" placeholder="Ask about BTC, market conditions, momentum, or risk."></textarea>
+      <button id="askAI">Ask AI</button>
+      <div id="aiStatus" class="status"></div>
+      <div id="aiAnswer"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Paper Trade</h2>
+      <input id="symbol" value="BTCUSD" />
+      <select id="side">
+        <option>BUY</option>
+        <option>SELL</option>
+      </select>
+      <input id="qty" type="number" value="0.1" />
+      <input id="price" type="number" value="67000" />
+      <button id="placeTrade">Place Paper Trade</button>
+      <div id="tradeResult"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Trade History</h2>
+      <div id="tradeList"></div>
+    </section>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
